@@ -49,3 +49,51 @@ go build main.go
 ```bash
 go run main.go // shows output directly
 ```
+
+## 05_Simple Values
+
+Go language supports following basic datatypes
+- Integer
+- Strings
+- Floats
+- Booleans
+
+## 06_Variables
+
+Variables in go can be defined in following ways
+
+```go
+var name string // declaration
+name = "Om Pant" // Assignment
+
+var name2 string = "Prateek" // initialization
+
+var name3 = "Ajay" // initialization with type inference
+
+name4 := "Himanshu" // shorthand initialization
+```
+
+## 07_Constants
+
+We can define constant values in go using const keyword.
+
+```go
+const name = "Yash"
+
+name = "Abc" // Will throw Error
+```
+
+- all rules applies to const declaration as we declared variables
+- we can also define const and var's outside function, but the shorthand notation will not work outside function.
+
+> Constant Groupings
+to define multiple constants, we can use constant grouings
+
+```go
+const (
+    port = 5500
+    host = "localhost"
+)
+
+fmt.Println(host, port)
+```
